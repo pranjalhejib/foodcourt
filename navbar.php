@@ -1,10 +1,10 @@
 <!-- navigation bar -->
-<nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+<nav class="navbar navbar-expand-md bg-light navbar-light fixed-top shadow-lg m-0 p-0">
     <div class="container">
 
         <!-- Logo -->
-        <a class="navbar-brand ps-2 pe-2 shadow-lg" style="background-color: #E4EFE7; font-family: 'Merienda', cursive; text-decoration: none; color: black;" href="#">
-            <h1>F<span style="color: #4E8D7C;">oo</span>dC<span style="color: #4E8D7C;">o</span>urt</h1>
+        <a class="navbar-brand ps-2 pe-2 shadow-lg" style="background-color: #E4EFE7; font-family: 'Merienda', cursive; text-decoration: none; color: black;" href="index.php">
+            <h2>F<span style="color: #4E8D7C;">oo</span>dC<span style="color: #4E8D7C;">o</span>urt</h2>
         </a>
 
         <!-- Toogler button & icon -->
@@ -16,13 +16,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link navlink" href="#section1"><i class="fas fa-home" style="font-size:20px;"></i> Welcome</a>
+                    <a class="nav-link navlink" href="#welcome"><i class="fas fa-home" style="font-size:20px;"></i> Welcome</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navlink" href="#section2"><i class="fas fa-utensils" style="font-size:20px;"></i> Menu</a>
+                    <a class="nav-link navlink" href="#menu"><i class="fas fa-utensils" style="font-size:20px;"></i> Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navlink" href="#section3"><i class="fas fa-map-marker-alt" style="font-size: 20px;"></i> Location</a>
+                    <a class="nav-link navlink" href="#location"><i class="fas fa-map-marker-alt" style="font-size: 20px;"></i> Location</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link navlink" href="#contact"><i class="fas fa-address-book"></i> Contact</a>
