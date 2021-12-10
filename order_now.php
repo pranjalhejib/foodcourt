@@ -41,19 +41,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link navlink" href="#welcome"><i class="fas fa-home" style="font-size:20px;"></i> Welcome</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navlink" href="#menu"><i class="fas fa-utensils" style="font-size:20px;"></i> Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navlink" href="#contact"><i class="fas fa-address-book"></i> Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navlink" href="#location"><i class="fas fa-map-marker-alt" style="font-size: 20px;"></i> Location</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navlink" href="#about"><i class="fas fa-info-circle"></i> About</a>
+                    <a class="nav-link navlink" href="main.php"><i class="fas fa-long-arrow-alt-left" style="font-size:20px;"></i> Back</a>
                 </li>
             </ul>
         </div>

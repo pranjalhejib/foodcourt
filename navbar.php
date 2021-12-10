@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!-- navigation bar -->
 <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top shadow-lg m-0 p-0">
     <div class="container">
@@ -22,13 +25,16 @@
                     <a class="nav-link navlink" href="#menu"><i class="fas fa-utensils" style="font-size:20px;"></i> Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navlink" href="#contact"><i class="fas fa-address-book"></i> Contact</a>
+                    <a class="nav-link navlink" href="#contact"><i class="fas fa-address-book" style="font-size: 20px;"></i> Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link navlink" href="#location"><i class="fas fa-map-marker-alt" style="font-size: 20px;"></i> Location</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navlink" href="#about"><i class="fas fa-info-circle"></i> About</a>
+                    <a class="nav-link navlink" href="#about"><i class="fas fa-info-circle" style="font-size: 20px;"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navlink" href="logout.php"><i class="fas fa-sign-out-alt" style="font-size: 20px;"></i> Log Out</a>
                 </li>
             </ul>
         </div>

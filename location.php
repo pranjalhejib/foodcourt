@@ -6,7 +6,7 @@
 
     <div class="row">
         <div>
-            <h4 class="card-title"><a href="tel:+91456-7890" class="text-decoration-none">Call: +91456-7890</a></h4>
+            <h4 class="card-title"><a href="tel:+91456-7890" class="text-decoration-none">Call: +91-8945678901</a></h4>
             <address>
                 Visit us at:<br>
                 Box 564, near D-Mart,<br>
