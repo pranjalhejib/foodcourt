@@ -36,6 +36,9 @@ session_start();
                 <li class="nav-item">
                     <a class="nav-link navlink" href="logout.php"><i class="fas fa-sign-out-alt" style="font-size: 20px;"></i> Log Out</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link navlink text-dark" href="#welcome"><i class="fas fa-user-tie" style="font-size: 20px;"></i><?php echo " Hi ".ucwords( $_SESSION['username']) ?></a>
+                </li>
             </ul>
         </div>
     </div>
