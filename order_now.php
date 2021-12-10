@@ -1,4 +1,29 @@
-<!-- navigation bar -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodCourt</title>
+
+    <!-- Bootstraps 5 +-->
+    <?php include 'bootstraps/bootstraps.php' ?>
+    <!-- CSS link +-->
+    <link rel="stylesheet" type="text/css" href="css\\style.css">
+    <!-- icon -->
+    <?php include 'icons/icons.php' ?>
+    <!-- Google font +-->
+    <?php include 'font/font.php' ?>
+    <!-- favicon +-->
+    <?php include 'favicon.php' ?>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <!-- navigation bar -->
 <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top shadow-lg m-0 p-0">
     <div class="container">
 
@@ -34,3 +59,9 @@
         </div>
     </div>
 </nav>
+
+
+
+</body>
+
+</html>
