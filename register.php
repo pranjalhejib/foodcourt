@@ -112,17 +112,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <!-- username -->
             <div class="input-group mb-3 mx-auto" style="width: 50%;">
                 <span class="input-group-text"><i class="far fa-user-circle" style="font-size: 20px;"></i></span>
-                <input type="text" class="form-control" placeholder="Username" name="username">
+                <input type="text" class="form-control" placeholder="Username" name="username" required>
             </div>
             <!-- password -->
             <div class="input-group mb-3 mx-auto" style="width: 50%;">
                 <span class="input-group-text"><i class="fas fa-key" style="font-size: 20px;"></i></span>
-                <input type="password" class="form-control" placeholder="Password" name="password">
+                <input type="password" class="form-control" placeholder="Password" name="password" required>
             </div>
             <!-- confirm password -->
             <div class="input-group mb-3 mx-auto" style="width: 50%;">
                 <span class="input-group-text"><i class="fas fa-unlock-alt" style="font-size: 20px;"></i></span>
-                <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password">
+                <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password" required>
             </div>
             <!-- sign in -->
             <button type="submit" class="btn btn-primary">Sign Up</button><br>

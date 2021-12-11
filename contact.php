@@ -7,29 +7,29 @@
         <!--  form  -->
         <form action="" method="post" class="container pt-1 mt-1">
             <!-- fname -->
-            <div class="input-group mb-3 mx-auto" style="width: 50%;">
+            <div class="input-group mb-3 mx-auto" style="width: 75%;">
                 <span class="input-group-text"><i class="far fa-user" style="font-size: 20px;"></i></span>
-                <input type="text" class="form-control" placeholder="First Name" name="fname">
+                <input type="text" class="form-control" placeholder="First Name" name="fname" required>
             </div>
             <!-- lname -->
-            <div class="input-group mb-3 mx-auto" style="width: 50%;">
+            <div class="input-group mb-3 mx-auto" style="width: 75%;">
                 <span class="input-group-text"><i class="far fa-user-circle" style="font-size: 20px;"></i></span>
-                <input type="text" class="form-control" placeholder="Last Name" name="lname">
+                <input type="text" class="form-control" placeholder="Last Name" name="lname" required>
             </div>
             <!-- email -->
-            <div class="input-group mb-3 mx-auto" style="width: 50%;">
+            <div class="input-group mb-3 mx-auto" style="width: 75%;">
                 <span class="input-group-text"><i class="far fa-envelope" style="font-size: 20px;"></i></span>
-                <input type="email" class="form-control" placeholder="Email Id" name="email">
+                <input type="email" class="form-control" placeholder="Email Id" name="email" required>
             </div>
             <!-- contact -->
-            <div class="input-group mb-3 mx-auto" style="width: 50%;">
+            <div class="input-group mb-3 mx-auto" style="width: 75%;">
                 <span class="input-group-text"><i class="fas fa-phone" style="font-size: 20px;"></i></span>
-                <input type="text" class="form-control" placeholder="Contact No" name="contact">
+                <input type="text" class="form-control" placeholder="Contact No" name="contact" required>
             </div>
             <!-- add comments -->
-            <div class="input-group mb-3 mx-auto" style="width: 50%;">
+            <div class="input-group mb-3 mx-auto" style="width: 75%;">
                 <span class="input-group-text"><i class="far fa-comment-dots" style="font-size: 20px;"></i></span>
-                <textarea class="form-control" placeholder="Comments" name="comments"></textarea>
+                <textarea class="form-control" placeholder="Comments" name="comments" required></textarea>
             </div>
             <!-- submit -->
             <button type="submit" class="btn btn-dark">Submit</button>

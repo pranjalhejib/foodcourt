@@ -192,6 +192,7 @@ if (isset($_GET["action"])) {
 
                 <?php
                 if (!empty($_SESSION["cart"])) {
+                    global $total;
                     $total = 0;
                     foreach ($_SESSION["cart"] as $key => $value) {
                 ?>
@@ -257,6 +258,42 @@ if (isset($_GET["action"])) {
                     <!-- submit -->
                     <button type="submit" class="btn btn-dark">Place Order</button>
                 </form>
+                <!-- php -->
+
+        <?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $email = $_POST['email'];
+    $contact = $_POST['contact'];
+    $address = $_POST['address'];
+    $amount = $total;
+
+    //connecting to db
+    include_once 'config.php';
+
+    //submit this to db
+
+    //my sql query to be executed
+    $sql = "INSERT INTO `orders` (`fname`, `lname`, `email`, `contact`, `address`, `amount`, `created_at`) VALUES ('$fname', '$lname', '$email', '$contact', '$address', $amount, current_timestamp())";
+
+
+
+    $result = mysqli_query($conn, $sql);
+
+    if ($result) {
+        echo '<h1>order placed!</h1>';
+    } else {
+        echo "Not inserted succesfully!";
+        mysqli_errno($conn);
+    }
+}
+
+
+
+?>
+
             </div>
         </div>
     </div>
