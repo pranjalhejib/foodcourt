@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +22,7 @@
     <!-- Google font +-->
     <?php include 'font/font.php' ?>
     <!-- favicon +-->
-    <?php include 'D:/IDE/XAMPP/htdocs/code/FoodCourt/favicon.php' ?>
+    <?php include 'favicon.php' ?>
 
 </head>
 

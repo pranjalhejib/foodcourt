@@ -1,4 +1,4 @@
-<div id="location" class="container-fluid text-center pt-5 pb-1" style="font-family: 'Merienda', cursive; color: black; background-color: #D3E4CD;">
+<div id="location" class="container-fluid text-center pt-5 pb-1" style="font-family: 'Merienda', cursive; color: black; background-color: white;">
 
     <br>
     <h2>Location</h2>
@@ -6,7 +6,7 @@
 
     <div class="row">
         <div>
-            <h4 class="card-title"><a href="tel:+91456-7890" class="text-decoration-none">Call: +91-8945678901</a></h4>
+            <h4 class="card-title"><a href="tel:+91456-7890" class="text-decoration-none text-dark">Call: +91-8945678901</a></h4>
             <address>
                 Visit us at:<br>
                 Box 564, near D-Mart,<br>

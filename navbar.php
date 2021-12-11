@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!-- navigation bar -->
 <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top shadow-lg m-0 p-0">
     <div class="container">

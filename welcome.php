@@ -12,7 +12,7 @@
                     <strong>Yummy food delivered fast & fresh!</strong>
                 </div>
                 <img src="img/breakfast.svg" alt="pizza" height="auto" width="50%"><br><br>
-                <button type="button" class="btn btn-success"><a href="order_now.php" style="text-decoration: none; color: white;">Order Now</a></button>
+                <button type="button" class="btn btn-success"><a href="cart.php" style="text-decoration: none; color: white;">Order Now</a></button>
 
             </div>
         </div>
