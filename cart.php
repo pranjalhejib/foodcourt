@@ -192,7 +192,7 @@ if (isset($_GET["action"])) {
 
                 <?php
                 if (!empty($_SESSION["cart"])) {
-                    global $total;
+
                     $total = 0;
                     foreach ($_SESSION["cart"] as $key => $value) {
                 ?>
@@ -206,6 +206,7 @@ if (isset($_GET["action"])) {
 
                         </tr>
                     <?php
+
                         $total = $total + ($value["item_quantity"] * $value["product_price"]);
                     }
                     ?>
@@ -260,45 +261,43 @@ if (isset($_GET["action"])) {
                 </form>
                 <!-- php -->
 
-        <?php
+                <?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $email = $_POST['email'];
-    $contact = $_POST['contact'];
-    $address = $_POST['address'];
-    $amount = $total;
-
-    //connecting to db
-    include_once 'config.php';
-
-    //submit this to db
-
-    //my sql query to be executed
-    $sql = "INSERT INTO `orders` (`fname`, `lname`, `email`, `contact`, `address`, `amount`, `created_at`) VALUES ('$fname', '$lname', '$email', '$contact', '$address', $amount, current_timestamp())";
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
+                    //connecting to db
+                    include_once 'config.php';
 
-    $result = mysqli_query($conn, $sql);
+                    //submit this to db
 
-    if ($result) {
-        echo '<h1>order placed!</h1>';
-    } else {
-        echo "Not inserted succesfully!";
-        mysqli_errno($conn);
-    }
-}
+                    if (empty(trim($_POST['fname'])) || empty(trim($_POST['lname'])) || empty(trim($_POST['lname'])) || empty(trim($_POST['lname'])) || empty(trim($_POST['lname'])) || empty(trim($_POST['lname'])) || $total == 0) {
+                        $err = "Please, fill the form completely!";
+                    } else {
+                        $fname = $_POST['fname'];
+                        $lname = $_POST['lname'];
+                        $email = $_POST['email'];
+                        $contact = $_POST['contact'];
+                        $address = $_POST['address'];
+                        $amount = $total;
+                    }
+                    if (empty($err)) {
+                        //my sql query to be executed
+                        $sql = "INSERT INTO `orders` (`fname`, `lname`, `email`, `contact`, `address`, `amount`, `created_at`) VALUES ('$fname', '$lname', '$email', '$contact', '$address', $amount, current_timestamp())";
+                    }
+                    $result = mysqli_query($conn, $sql);
 
-
-
-?>
-
+                    if ($result) {
+                        echo '<h1>Your order has been placed!</h1>';
+                    } else {
+                        echo "Not inserted succesfully!";
+                        mysqli_errno($conn);
+                    }
+                }
+                ?>
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
